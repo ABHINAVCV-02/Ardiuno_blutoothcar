@@ -58,4 +58,50 @@ void moveForward() {
   motor2.run(FORWARD);
   motor3.setSpeed(255);
   motor3.run(FORWARD);
-  motor4.setSpeed(
+  motor4.setSpeed(255);
+  motor4.run(FORWARD);
+}
+
+void moveBackward() {
+  motor1.setSpeed(255);
+  motor1.run(BACKWARD);
+  motor2.setSpeed(255);
+  motor2.run(BACKWARD);
+  motor3.setSpeed(255);
+  motor3.run(BACKWARD);
+  motor4.setSpeed(255);
+  motor4.run(BACKWARD);
+}
+
+void turnLeft() {
+  motor1.setSpeed(200);
+  motor1.run(FORWARD);
+  motor2.setSpeed(200);
+  motor2.run(FORWARD);
+  motor3.setSpeed(200);
+  motor3.run(BACKWARD);
+  motor4.setSpeed(200);
+  motor4.run(BACKWARD);
+}
+
+void turnRight() {
+  motor1.setSpeed(200);
+  motor1.run(BACKWARD);
+  motor2.setSpeed(200);
+  motor2.run(BACKWARD);
+  motor3.setSpeed(200);
+  motor3.run(FORWARD);
+  motor4.setSpeed(200);
+  motor4.run(FORWARD);
+}
+
+void stopMoving() {
+  motor1.setSpeed(0);
+  motor1.run(RELEASE);
+  motor2.setSpeed(0);
+  motor2.run(RELEASE);
+  motor3.setSpeed(0);
+  motor3.run(RELEASE);
+  motor4.setSpeed(0);
+  motor4.run(RELEASE);
+}
